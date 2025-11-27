@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
-import { wait } from '@/utils/utils-time';
 import { useAnimation } from 'motion/react';
+
+import { wait } from '@/utils/time';
 
 export function useMotionCycle(states: string[], run = true, delay = 0) {
 	const controls = useAnimation();
