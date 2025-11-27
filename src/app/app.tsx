@@ -1,8 +1,7 @@
 import { Grid } from '@/features/grid';
 import { Keyboard } from '@/features/keyboard';
 
-import { Header } from '@/components/header';
-import { Footer } from '@/components/footer';
+import { Header, Footer } from '@/components/internal';
 
 import '@/styles/fonts.css';
 import '@/styles/global.css';
