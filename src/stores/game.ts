@@ -7,14 +7,14 @@ import { rehydrateOnStorageEvent } from '@/utils/store';
 
 import { createThemeSlice } from '@/features/theme';
 import { createKeyboardSlice } from '@/features/keyboard';
-import { createRowsSlice, createGridSlice } from '@/features/grid';
+import { createRowSlice, createGridSlice } from '@/features/grid';
 
 export const useGameStore = create<GameStore>()(
 	persist(
 		(...a) => ({
+			...createRowSlice(...a),
 			...createGameSlice(...a),
 			...createGridSlice(...a),
-			...createRowsSlice(...a),
 			...createThemeSlice(...a),
 			...createKeyboardSlice(...a),
 		}),
