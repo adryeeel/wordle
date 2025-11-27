@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-type EventMap = WindowEventMap & DocumentEventMap;
+type EventMap = WindowEventMap & DocumentEventMap & MediaQueryListEventMap;
 
 type UseEventListener = <K extends keyof EventMap>(
 	target: EventTarget,
