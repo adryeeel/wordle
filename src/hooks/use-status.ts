@@ -1,4 +1,4 @@
-import { useGameStore } from '@/stores/store-game';
+import { useGameStore } from '@/stores/game';
 
 interface UseStatus {
 	isPlaying: boolean;
